@@ -21,7 +21,7 @@
                   </h4>
                   <h5>{{ product.price }} Kč</h5>
                   <p class="card-text">{{ product.description }}</p>
-                  <button type="button" class="btn btn-lg btn-block btn-outline-primary">Detail produktu</button>
+                  <a href="{{ path('product_detail', {'id': product.id}) }}"  class="btn btn-lg btn-block btn-outline-primary">Detail produktu</a>
                 </div>
               </div>
             </div>
